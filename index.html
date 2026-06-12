@@ -28,8 +28,8 @@
 
             <!-- IDIOMAS -->
             <div class="language-switch">
-                <button class="lang-btn active">ES</button>
-                <button class="lang-btn">EN</button>
+                <button id="btn-es" class="lang-btn active">ES</button>
+                <button id="btn-en" class="lang-btn">EN</button>
             </div>
 
         </nav>
@@ -38,10 +38,10 @@
     <!-- MENU LATERAL -->
     <div class="side-menu">
 
-        <a href="#about">Sobre mí</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#contact">Contacto</a>
+        <a href="#about" data-i18n="menuAbout">Sobre mí</a>
+        <a href="#skills" data-i18n="menuSkills">Habilidades</a>
+        <a href="#projects" data-i18n="menuProjects">Proyectos</a>
+        <a href="#contact" data-i18n="menuContact">Contacto</a>
 
     </div>
 
@@ -52,16 +52,16 @@
 
             <h1>Omar I. Mendoza Baez</h1>
 
-            <h2>
+            <h2 data-i18n="heroTitle">
                 Ingeniero en TI y Sistemas Inteligentes
             </h2>
 
-            <p>
+            <p data-i18n="heroDescription">
                 Desarrollo web, UX/UI, inteligencia artificial
                 y experiencias interactivas.
             </p>
 
-            <a href="#projects" class="btn">
+            <a href="#projects" class="btn" data-i18n="heroButton">
                 Ver proyectos
             </a>
 
@@ -72,16 +72,16 @@
     <!-- SOBRE MI -->
     <section id="about" class="section">
 
-    <h2>Sobre mí</h2>
+    <h2 data-i18n="aboutTitle">Sobre mí</h2>
 
-    <p>
+    <p data-i18n="aboutText1">
         Soy Ingeniero en Tecnologías de la Información
         con especialidad en Diseño Interactivo.
         Me apasiona crear experiencias digitales que
         combinen funcionalidad, accesibilidad y diseño.
     </p>
 
-    <p>
+    <p data-i18n="aboutText2">
         Tengo experiencia en desarrollo web, UX/UI,
         análisis de datos y ciberseguridad.
         Disfruto trabajar en proyectos donde pueda
@@ -93,7 +93,7 @@
 
     <!-- HABILIDADES -->
     <section id="skills" class="section">
-        <h2>Habilidades</h2>
+        <h2 data-i18n="skillsTitle">Habilidades</h2>
         <div class="skills-container">
             <div class="card">Python</div>
             <div class="card">JavaScript</div>
@@ -116,7 +116,7 @@
 
             <div class="card">Figma</div>
             <div class="card">UX/UI</div>
-            <div class="card">Accesibilidad</div>
+            <div class="card">Unity</div>
         </div>
     </section>
     
@@ -124,20 +124,49 @@
     <!-- PROYECTOS -->
     <section id="projects" class="section">
 
-        <h2>Proyectos</h2>
+        <h2 data-i18n="projectsTitle">Proyectos</h2>
 
         <div class="projects-container">
 
             <div class="project-card">
-                <h3>Proyecto Jenga Háptico</h3>
-                <p>Simulación interactiva en Unity.</p>
+                <h3 data-i18n="project1Title">
+                    Proyecto Jenga Háptico
+                </h3>
+
+                <p data-i18n="project1Description">
+                    Simulación interactiva en Unity.
+                </p>
+
+                <a href="https://github.com/omar-imb/HapticJenga"
+                target="_blank"
+                class="project-link">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <span data-i18n="repoButton">
+                        Ver repositorio
+                    </span>
+                </a>
             </div>
 
             <div class="project-card">
-                <h3>Aplicaciones React</h3>
-                <p>Interfaces web modernas e interactivas.</p>
-            </div>
+                <h3 data-i18n="project2Title">
+                    Página Web Flem Studio
+                </h3>
 
+                <p data-i18n="project2Description">
+                    Creación de una página para el estudio de animación Flem.
+                </p>
+
+                <a href="https://omar-imb.github.io/FLEM/"
+                target="_blank"
+                class="project-link">
+
+                    <span data-i18n="visitButton">
+                        Visitar página
+                    </span>
+                </a>
+            </div>
         </div>
 
     </section>
@@ -145,15 +174,19 @@
     <!-- EXPERIENCIA -->
     <section id="experience" class="section">
 
-        <h2>Experiencia</h2>
+        <h2 data-i18n="experienceTitle">
+            Experiencia
+        </h2>
 
         <div class="project-card">
 
-            <h3>W Tech — Becario en Tecnologías de la Información</h3>
+            <h3 data-i18n="experienceCompany">
+                W Tech — Becario en Tecnologías de la Información
+            </h3>
 
             <span>Septiembre 2024 – Diciembre 2024</span>
 
-            <p>
+            <p data-i18n="experienceDescription">
                 Participé en auditorías de seguridad y rendimiento web,
                 análisis de productos tecnológicos y diseño de interfaces
                 enfocadas en UX/UI.
@@ -166,15 +199,19 @@
     <!-- EDUCACION -->
     <section id="education" class="section">
 
-        <h2>Educación</h2>
+        <h2 data-i18n="educationTitle">
+            Educación
+        </h2>
 
         <div class="education-container">
 
             <div class="project-card">
 
-                <h3>Universidad Panamericana</h3>
+                <h3 data-i18n="education1Title">
+                    Universidad Panamericana
+                </h3>
 
-                <p>
+                <p data-i18n="education1Description">
                     Ingeniería en Tecnologías de la Información
                     y Sistemas Inteligentes
                 </p>
@@ -185,9 +222,11 @@
 
             <div class="project-card">
 
-                <h3>Especialidad en Diseño Interactivo</h3>
+                <h3 data-i18n="education2Title">
+                    Especialidad en Diseño Interactivo
+                </h3>
 
-                <p>
+                <p data-i18n="education2Description">
                     Universidad Panamericana
                 </p>
 
@@ -202,13 +241,17 @@
     <!-- CONTACTO -->
     <section id="contact" class="section">
 
-        <h2>Contacto</h2>
+        <h2 data-i18n="contactTitle">
+            Contacto
+        </h2>
 
-        <p class="contact-text">
+        <p class="contact-text"
+        data-i18n="contactDescription">
+
             ¿Te interesa trabajar conmigo o colaborar en algún proyecto?
             Puedes contactarme a través de cualquiera de estos medios.
-        </p>
 
+        </p>
         <div class="contact-container">
 
             <!-- EMAIL -->
@@ -231,7 +274,7 @@
 
                 <h3>LinkedIn</h3>
 
-                <a href="https://linkedin.com/in/omar-imb" target="_blank">
+                <a href="https://linkedin.com/in/omar-imb" target="_blank" data-i18n="linkedinButton">
                     Ver perfil
                 </a>
 
@@ -244,7 +287,7 @@
 
                 <h3>GitHub</h3>
 
-                <a href="https://github.com/omar-imb" target="_blank">
+                <a href="https://github.com/omar-imb" target="_blank" data-i18n="githubButton">
                     Ver proyectos
                 </a>
 
@@ -253,7 +296,7 @@
         </div>
 
         <!-- BOTONES -->
-        <div class="contact-buttons">
+        <!-- <div class="contact-buttons">
 
             <a href="#" class="btn">
                 Descargar CV
@@ -263,7 +306,7 @@
                 Enviar Email
             </a>
 
-        </div>
+        </div> -->
 
     </section>
 

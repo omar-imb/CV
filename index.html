@@ -1,316 +1,349 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Mendoza | Portfolio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Omar Mendoza | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 
-    <!-- Fuente -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Fuente -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Iconos -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-</head>
-<body>
+        <!-- Iconos -->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
 
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
+                <!-- HAMBURGUESA -->
+                <div class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
 
-            <!-- HAMBURGUESA -->
-            <div class="menu-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+                <!-- IDIOMAS -->
+                <div class="language-switch">
+                    <button id="btn-es" class="lang-btn active">ES</button>
+                    <button id="btn-en" class="lang-btn">EN</button>
+                </div>
 
-            <!-- IDIOMAS -->
-            <div class="language-switch">
-                <button id="btn-es" class="lang-btn active">ES</button>
-                <button id="btn-en" class="lang-btn">EN</button>
-            </div>
+            </nav>
+        </header>
 
-        </nav>
-    </header>
+        <div class="side-menu">
 
-    <!-- MENU LATERAL -->
-    <div class="side-menu">
+            <a href="#about" data-i18n="menuAbout">Sobre mí</a>
+            <a href="#skills" data-i18n="menuSkills">Habilidades</a>
+            <a href="#projects" data-i18n="menuProjects">Proyectos</a>
+            <a href="#contact" data-i18n="menuContact">Contacto</a>
 
-        <a href="#about" data-i18n="menuAbout">Sobre mí</a>
-        <a href="#skills" data-i18n="menuSkills">Habilidades</a>
-        <a href="#projects" data-i18n="menuProjects">Proyectos</a>
-        <a href="#contact" data-i18n="menuContact">Contacto</a>
+        </div>
 
-    </div>
+        <main>
+            <section class="hero">
 
-    <!-- HERO -->
-    <section class="hero">
+                <div class="hero-content">
 
-        <div class="hero-content">
+                    <h1>Omar I. Mendoza Baez</h1>
 
-            <h1>Omar I. Mendoza Baez</h1>
+                    <h2 data-i18n="heroTitle">
+                        Ingeniero en TI y Sistemas Inteligentes
+                    </h2>
 
-            <h2 data-i18n="heroTitle">
-                Ingeniero en TI y Sistemas Inteligentes
-            </h2>
+                    <p data-i18n="heroDescription">
+                        Desarrollo web, UX/UI, inteligencia artificial
+                        y experiencias interactivas.
+                    </p>
 
-            <p data-i18n="heroDescription">
-                Desarrollo web, UX/UI, inteligencia artificial
-                y experiencias interactivas.
+                    <a href="#projects" class="btn" data-i18n="heroButton">
+                        Ver proyectos
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- SOBRE MI -->
+            <section id="about" class="section">
+
+            <h2 data-i18n="aboutTitle">Sobre mí</h2>
+
+            <p data-i18n="aboutText1">
+                Soy Ingeniero en Tecnologías de la Información
+                con especialidad en Diseño Interactivo.
+                Me apasiona crear experiencias digitales que
+                combinen funcionalidad, accesibilidad y diseño.
             </p>
 
-            <a href="#projects" class="btn" data-i18n="heroButton">
-                Ver proyectos
-            </a>
+            <p data-i18n="aboutText2">
+                Tengo experiencia en desarrollo web, UX/UI,
+                análisis de datos y ciberseguridad.
+                Disfruto trabajar en proyectos donde pueda
+                integrar tecnología, creatividad y resolución
+                de problemas.
+            </p>
 
-        </div>
+            </section>
 
-    </section>
+            <!-- HABILIDADES -->
+            <section id="skills" class="section">
+                <h2 data-i18n="skillsTitle">Habilidades</h2>
+                <div class="skills-container">
+                    <div class="card">Python</div>
+                    <div class="card">JavaScript</div>
+                    <div class="card">C / C++</div>
+                    <div class="card">Java</div>
 
-    <!-- SOBRE MI -->
-    <section id="about" class="section">
+                    <div class="card">HTML</div>
+                    <div class="card">CSS</div>
+                    <div class="card">React</div>
 
-    <h2 data-i18n="aboutTitle">Sobre mí</h2>
+                    <div class="card">MySQL</div>
+                    <div class="card">SQL Server</div>
 
-    <p data-i18n="aboutText1">
-        Soy Ingeniero en Tecnologías de la Información
-        con especialidad en Diseño Interactivo.
-        Me apasiona crear experiencias digitales que
-        combinen funcionalidad, accesibilidad y diseño.
-    </p>
+                    <div class="card">Power BI</div>
+                    <div class="card">Excel Avanzado</div>
 
-    <p data-i18n="aboutText2">
-        Tengo experiencia en desarrollo web, UX/UI,
-        análisis de datos y ciberseguridad.
-        Disfruto trabajar en proyectos donde pueda
-        integrar tecnología, creatividad y resolución
-        de problemas.
-    </p>
+                    <div class="card">Wazuh</div>
+                    <div class="card">Wireshark</div>
+                    <div class="card">Kali Linux</div>
 
-    </section>
+                    <div class="card">Figma</div>
+                    <div class="card">UX/UI</div>
+                    <div class="card">Unity</div>
+                </div>
+            </section>
+            
 
-    <!-- HABILIDADES -->
-    <section id="skills" class="section">
-        <h2 data-i18n="skillsTitle">Habilidades</h2>
-        <div class="skills-container">
-            <div class="card">Python</div>
-            <div class="card">JavaScript</div>
-            <div class="card">C / C++</div>
-            <div class="card">Java</div>
+            <!-- PROYECTOS -->
+            <section id="projects" class="section">
 
-            <div class="card">HTML</div>
-            <div class="card">CSS</div>
-            <div class="card">React</div>
+                <h2 data-i18n="projectsTitle">Proyectos</h2>
 
-            <div class="card">MySQL</div>
-            <div class="card">SQL Server</div>
+                <div class="projects-container">
 
-            <div class="card">Power BI</div>
-            <div class="card">Excel Avanzado</div>
+                    <div class="project-card">
+                        <h3 data-i18n="project1Title">
+                            Proyecto Jenga Háptico
+                        </h3>
 
-            <div class="card">Wazuh</div>
-            <div class="card">Wireshark</div>
-            <div class="card">Kali Linux</div>
+                        <p data-i18n="project1Description">
+                            Simulación interactiva en Unity.
+                        </p>
 
-            <div class="card">Figma</div>
-            <div class="card">UX/UI</div>
-            <div class="card">Unity</div>
-        </div>
-    </section>
-    
+                        <a href="https://github.com/omar-imb/HapticJenga"
+                        target="_blank"
+                        class="project-link">
 
-    <!-- PROYECTOS -->
-    <section id="projects" class="section">
+                            <i class="fa-brands fa-github"></i>
 
-        <h2 data-i18n="projectsTitle">Proyectos</h2>
+                            <span data-i18n="repoButton">
+                                Ver repositorio
+                            </span>
+                        </a>
+                    </div>
 
-        <div class="projects-container">
+                    <div class="project-card">
+                        <h3 data-i18n="project2Title">
+                            Página Web Flem Studio
+                        </h3>
 
-            <div class="project-card">
-                <h3 data-i18n="project1Title">
-                    Proyecto Jenga Háptico
-                </h3>
+                        <p data-i18n="project2Description">
+                            Creación de una página para el estudio de animación Flem.
+                        </p>
 
-                <p data-i18n="project1Description">
-                    Simulación interactiva en Unity.
+                        <a href="https://omar-imb.github.io/FLEM/"
+                        target="_blank"
+                        class="project-link">
+
+                            <span data-i18n="visitButton">
+                                Visitar página
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- EXPERIENCIA -->
+            <section id="experience" class="section">
+
+                <h2 data-i18n="experienceTitle">
+                    Experiencia
+                </h2>
+
+                <div class="project-card">
+
+                    <h3 data-i18n="experienceCompany">
+                        W Tech — Becario en Tecnologías de la Información
+                    </h3>
+
+                    <span>Septiembre 2024 – Diciembre 2024</span>
+
+                    <p data-i18n="experienceDescription">
+                        Participé en auditorías de seguridad y rendimiento web,
+                        análisis de productos tecnológicos y diseño de interfaces
+                        enfocadas en UX/UI.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- EDUCACION -->
+            <section id="education" class="section">
+
+                <h2 data-i18n="educationTitle">
+                    Educación
+                </h2>
+
+                <div class="education-container">
+
+                    <div class="project-card">
+
+                        <h3 data-i18n="education1Title">
+                            Universidad Panamericana
+                        </h3>
+
+                        <p data-i18n="education1Description">
+                            Ingeniería en Tecnologías de la Información
+                            y Sistemas Inteligentes
+                        </p>
+
+                        <span>2019 – 2024</span>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <h3 data-i18n="education2Title">
+                            Especialidad en Diseño Interactivo
+                        </h3>
+
+                        <p data-i18n="education2Description">
+                            Universidad Panamericana
+                        </p>
+
+                        <span>2025 – Actualidad</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CONTACTO -->
+            <section id="contact" class="section">
+
+                <h2 data-i18n="contactTitle">
+                    Contacto
+                </h2>
+
+                <p class="contact-text"
+                data-i18n="contactDescription">
+
+                    ¿Te interesa trabajar conmigo o colaborar en algún proyecto?
+                    Puedes contactarme a través de cualquiera de estos medios.
+
                 </p>
+                <div class="contact-container">
 
-                <a href="https://github.com/omar-imb/HapticJenga"
-                target="_blank"
-                class="project-link">
+                    <!-- EMAIL -->
+                    <div class="contact-card">
 
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <h3>Email</h3>
+
+                        <p>
+                            omar107555@gmail.com
+                        </p>
+
+                    </div>
+
+                    <!-- LINKEDIN -->
+                    <div class="contact-card">
+
+                        <i class="fa-brands fa-linkedin"></i>
+
+                        <h3>LinkedIn</h3>
+
+
+                        <a href="https://linkedin.com/in/omar-imb" target="_blank" data-i18n="linkedinButton">
+                            Ver perfil
+                        </a>
+
+                    </div>
+
+                    <!-- GITHUB -->
+                    <div class="contact-card">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <h3>GitHub</h3>
+        
+                        <a href="https://github.com/omar-imb" target="_blank" data-i18n="githubButton">
+                            Ver proyectos
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- BOTONES -->
+                <!-- <div class="contact-buttons">
+
+                    <a href="#" class="btn">
+                        Descargar CV
+                    </a>
+
+                    <a href="mailto:omar107555@gmail.com" class="btn secondary-btn">
+                        Enviar Email
+                    </a>
+
+                </div> -->
+
+            </section>
+
+            <script src="script.js"></script>
+        </main>
+
+        <footer>
+
+        <div class="footer-content">
+
+            <h3>Omar I. Mendoza Báez</h3>
+
+            <p>
+                IT Engineer • UX/UI Designer • Interactive Design
+            </p>
+
+            <div class="footer-links">
+
+                <a href="https://github.com/omar-imb" target="_blank">
                     <i class="fa-brands fa-github"></i>
-
-                    <span data-i18n="repoButton">
-                        Ver repositorio
-                    </span>
                 </a>
+
+                <a href="https://linkedin.com/in/omar-imb" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:omar107555@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
             </div>
 
-            <div class="project-card">
-                <h3 data-i18n="project2Title">
-                    Página Web Flem Studio
-                </h3>
-
-                <p data-i18n="project2Description">
-                    Creación de una página para el estudio de animación Flem.
-                </p>
-
-                <a href="https://omar-imb.github.io/FLEM/"
-                target="_blank"
-                class="project-link">
-
-                    <span data-i18n="visitButton">
-                        Visitar página
-                    </span>
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- EXPERIENCIA -->
-    <section id="experience" class="section">
-
-        <h2 data-i18n="experienceTitle">
-            Experiencia
-        </h2>
-
-        <div class="project-card">
-
-            <h3 data-i18n="experienceCompany">
-                W Tech — Becario en Tecnologías de la Información
-            </h3>
-
-            <span>Septiembre 2024 – Diciembre 2024</span>
-
-            <p data-i18n="experienceDescription">
-                Participé en auditorías de seguridad y rendimiento web,
-                análisis de productos tecnológicos y diseño de interfaces
-                enfocadas en UX/UI.
+            <p class="copyright">
+                © 2026 Omar I. Mendoza Báez
             </p>
 
         </div>
 
-    </section>
+        </footer>
+    </body>
 
-    <!-- EDUCACION -->
-    <section id="education" class="section">
-
-        <h2 data-i18n="educationTitle">
-            Educación
-        </h2>
-
-        <div class="education-container">
-
-            <div class="project-card">
-
-                <h3 data-i18n="education1Title">
-                    Universidad Panamericana
-                </h3>
-
-                <p data-i18n="education1Description">
-                    Ingeniería en Tecnologías de la Información
-                    y Sistemas Inteligentes
-                </p>
-
-                <span>2019 – 2024</span>
-
-            </div>
-
-            <div class="project-card">
-
-                <h3 data-i18n="education2Title">
-                    Especialidad en Diseño Interactivo
-                </h3>
-
-                <p data-i18n="education2Description">
-                    Universidad Panamericana
-                </p>
-
-                <span>2025 – Actualidad</span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contact" class="section">
-
-        <h2 data-i18n="contactTitle">
-            Contacto
-        </h2>
-
-        <p class="contact-text"
-        data-i18n="contactDescription">
-
-            ¿Te interesa trabajar conmigo o colaborar en algún proyecto?
-            Puedes contactarme a través de cualquiera de estos medios.
-
-        </p>
-        <div class="contact-container">
-
-            <!-- EMAIL -->
-            <div class="contact-card">
-
-                <i class="fa-solid fa-envelope"></i>
-
-                <h3>Email</h3>
-
-                <p>
-                    omar107555@gmail.com
-                </p>
-
-            </div>
-
-            <!-- LINKEDIN -->
-            <div class="contact-card">
-
-                <i class="fa-brands fa-linkedin"></i>
-
-                <h3>LinkedIn</h3>
-
-                <a href="https://linkedin.com/in/omar-imb" target="_blank" data-i18n="linkedinButton">
-                    Ver perfil
-                </a>
-
-            </div>
-
-            <!-- GITHUB -->
-            <div class="contact-card">
-
-                <i class="fa-brands fa-github"></i>
-
-                <h3>GitHub</h3>
-
-                <a href="https://github.com/omar-imb" target="_blank" data-i18n="githubButton">
-                    Ver proyectos
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- BOTONES -->
-        <!-- <div class="contact-buttons">
-
-            <a href="#" class="btn">
-                Descargar CV
-            </a>
-
-            <a href="mailto:omar107555@gmail.com" class="btn secondary-btn">
-                Enviar Email
-            </a>
-
-        </div> -->
-
-    </section>
-
-    <script src="script.js"></script>
-
-</body>
 </html>

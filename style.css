@@ -267,14 +267,74 @@ body{
 
 /* RESPONSIVE */
 
-@media(max-width: 768px){
+/* TABLETS */
+
+@media (max-width: 768px){
+
+    .section{
+        padding: 80px 8%;
+    }
 
     .hero-content h1{
         font-size: 3rem;
     }
 
     .hero-content h2{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    .hero-content p{
+        font-size: 1rem;
+    }
+
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* MOVILES */
+
+@media (max-width: 480px){
+
+    .navbar{
+        padding: 20px;
+    }
+
+    .section{
+        padding: 70px 6%;
+    }
+
+    .hero-content h1{
+        font-size: 2.2rem;
+    }
+
+    .hero-content h2{
+        font-size: 1.1rem;
+    }
+
+    .hero-content p{
+        font-size: 0.95rem;
+    }
+
+    .skills-container{
+        justify-content: center;
+    }
+
+    .project-card{
+        padding: 20px;
+    }
+
+    .contact-card{
+        padding: 25px;
+    }
+
+    .side-menu{
+        width: 220px;
     }
 
 }
@@ -366,4 +426,70 @@ body{
     border: 2px solid #38bdf8;
 
     color: white;
+}
+
+/* FOOTER */
+
+footer{
+
+    border-top: 1px solid #1e293b;
+
+    margin-top: 50px;
+
+    padding: 50px 10%;
+
+    text-align: center;
+
+}
+
+.footer-content h3{
+
+    color: #38bdf8;
+
+    margin-bottom: 10px;
+
+}
+
+.footer-content p{
+
+    color: #94a3b8;
+
+}
+
+.footer-links{
+
+    margin: 25px 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+.footer-links a{
+
+    color: white;
+
+    font-size: 1.5rem;
+
+    transition: 0.3s;
+
+}
+
+.footer-links a:hover{
+
+    color: #38bdf8;
+
+    transform: translateY(-3px);
+
+}
+
+.copyright{
+
+    font-size: 0.9rem;
+
+    color: #64748b;
+
 }

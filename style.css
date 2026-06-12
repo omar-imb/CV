@@ -120,6 +120,16 @@ body{
 
     text-align: center;
     padding: 20px;
+    background-image:
+        linear-gradient(
+            rgba(15,23,42,.85),
+            rgba(15,23,42,.85)
+        ),
+        url("img/9117609.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-content h1{
@@ -260,8 +270,6 @@ body{
 
 .contact-text{
     margin-bottom: 50px;
-
-    max-width: 700px;
 
     line-height: 1.8;
 }
